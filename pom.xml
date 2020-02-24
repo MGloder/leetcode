@@ -24,6 +24,8 @@ under the License.
     <version>0.1</version>
     <modules>
         <module>easy</module>
+        <module>medium</module>
+        <module>hard</module>
     </modules>
     <packaging>pom</packaging>
 

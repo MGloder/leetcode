@@ -2,4 +2,8 @@
 *.log
 .idea
 target
-*.iml
+**/*.iml
+easy/easy.iml
+hard/hard.iml
+leetcode.iml
+medium/medium.iml

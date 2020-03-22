@@ -24,10 +24,6 @@ class GasStation {
     for (i <- (0 to circularLength - 1)) {
       difference(i) = gas(i) - cost(i)
     }
-    val sum = difference.reduce(_ + _)
-    if (sum < 0) {
-      return -1
-    }
 
     def checkIfValid(startIndex: Int): Boolean = {
       var traversIndex = startIndex

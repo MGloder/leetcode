@@ -11,5 +11,5 @@ object PathSum {
     }
 
     return checkPathSum(root, 0)
-
   }
+}

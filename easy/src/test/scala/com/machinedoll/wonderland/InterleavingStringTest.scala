@@ -11,4 +11,8 @@ class InterleavingStringTest extends AnyFunSuite {
   test("aabcc, dbbca, aadbbbaccc is false") {
     assert(checker.isInterleave("aabcc", "dbbca", "aadbbbaccc") === false)
   }
+
+  test("a, b, a is false") {
+    assert(checker.isInterleave("a", "b", "a") === false)
+  }
 }

@@ -15,4 +15,16 @@ class InterleavingStringTest extends AnyFunSuite {
   test("a, b, a is false") {
     assert(checker.isInterleave("a", "b", "a") === false)
   }
+
+  test("aabcc, dbbca === aadbbcbcac dp") {
+    assert(checker.isInterleaveDP("aabcc", "dbbca", "aadbbcbcac") === true)
+  }
+
+  test("aabcc, dbbca, aadbbbaccc is false dp") {
+    assert(checker.isInterleaveDP("aabcc", "dbbca", "aadbbbaccc") === false)
+  }
+
+  test("a, b, a is false dp") {
+    assert(checker.isInterleaveDP("a", "b", "a") === false)
+  }
 }
